@@ -1,4 +1,4 @@
-_G.FastAttack = true
+_G.FastA"tack = true
 if _G.FastAttack then
     local _ENV = (getgenv or getrenv or getfenv)()
 
@@ -191,8 +191,8 @@ Main1=Window:AddTab({ Title="Fram khác " }),
     Sea=Window:AddTab({ Title="sự kiện biển" }),
     Item=Window:AddTab({ Title="stack Fram" }),
     Setting=Window:AddTab({ Title="Cài đặt " }),
-    Status=Window:AddTab({ Title="quy chế " }),
-    Stats=Window:AddTab({ Title="Thống kê " }),
+    Status=Window:AddTab({ Title="máy chủ & join " }),
+    Stats=Window:AddTab({ Title="nâng điểm" }),
     Player=Window:AddTab({ Title="Người chơi " }),
     Teleport=Window:AddTab({ Title="dịch chuyển" }),
     Visual=Window:AddTab({ Title="giả" }),
@@ -2355,29 +2355,16 @@ task.defer(function()
     end
 end)
 wait(1.0)
+
 Tabs.Info:AddButton({
-        Title="thịnh",
-        Description="Discord",
-        Callback=function()
-            setclipboard(tostring("https://discord.gg/wRvcMCf7xX")) 
-        end
-})
-Tabs.Info:AddButton({
-    Title="thịnh",
-    Description="Youtube",
-    Callback=function()
-        setclipboard(tostring("https://m.youtube.com/channel/UCjIFH5AZ761OfX_7o5Nurvw"))
-    end
-})
-Tabs.Info:AddButton({
-    Title="Fb thịnh",
+    Title="Fb senky nezo",
     Description="Facebook",
     Callback=function()
         setclipboard(tostring("quên rồi"))
     end
 })
 Tabs.Info:AddParagraph({
-    Title="thịnh hoàng",
+    Title="senky",
     Content="Credits"
 })
 local executorName
@@ -6967,59 +6954,59 @@ Tabs.Teleport:AddButton({
 local Mastery = Tabs.Teleport:AddSection("Island")
 if Sea1 then
  IslandList={
-                "cối xay gió ",
-                "que",
-                "Middle Town",
-                "Jungle",
+                "error",
+                "error",
+                "Thị trấn trung tâm",
+                "đảo khỉ",
                 "Pirate Village",
-                "Desert",
-                "Snow Island",
+                "Sa mạc",
+                "Đảo Tuyết",
                 "MarineFord",
-                "Colosseum",
-                "Sky Island 1",
-                "Sky Island 2",
-                "Sky Island 3",
-                "Prison",
-                "Magma Village",
-                "Under Water Island",
-                "Fountain City",
+                "Đấu trường La Mã",
+                "Đảo trên trời 1",
+                "Đảo trên trời 2",
+                "Đảo trên trời 3",
+                "Nhà tù",
+                "Làng magma",
+                "Đảo dưới nước",
+                "Thành phố đài phun nước",
                 "Shank Room",
                 "Mob Island",
 }
 elseif Sea2 then
        IslandList={
-        "The Cafe",
-        "Frist Spot",
-        "Dark Area",
-        "Flamingo Mansion",
-        "Flamingo Room",
-        "Green Zone",
-        "Factory",
-        "Colossuim",
-        "Zombie Island",
-        "Two Snow Mountain",
-        "Punk Hazard",
-        "Cursed Ship",
-        "Ice Castle",
-        "Forgotten Island",
-        "Ussop Island",
-        "Mini Sky Island",
+        "Quán cà phê",
+        "điểm đầu của sea 2",
+        "vùng tối",
+        "Biệt thự Flamingo",
+        "Phòng Flamingo ",
+        "khu vườn xanh",
+        "Nhà máy",
+        "khổng lồ",
+        "nghĩa địa",
+        "Hai ngọn núi tuyết",
+        "Nguy hiểm Punk",
+        "Con tàu bị nguyền rủa",
+        "Lâu đài băng",
+        "Đảo bị lãng quên",
+        "Đảo Ussop",
+        "Đảo bầu trời thu nhỏ",
        }
 elseif Sea3 then
     IslandList={
-        "Mansion",
-        "Port Town",
-        "Great Tree",
-        "Castle On The Sea",
-        "MiniSky", 
-        "Hydra Island",
-        "Floating Turtle",
-        "Haunted Castle",
-        "Ice Cream Island",
-        "Peanut Island",
-        "Cake Island",
-        "Cocoa Island",
-        "Candy Island",
+        "dinh thự",
+        "Thành phố cảng",
+        "cây đại thụ",
+        "pháo đài trên biển",
+        "trời nhỏ", 
+        "đảo phụ nữ",
+        "đảo rùa",
+        "Lâu đài ma ám",
+        "Đảo kem",
+        "đảo đậu phộng",
+        "đảo Cake (bánh kẹo)",
+        "đảo Cocoa (bánh kẹo)",
+        "đảo Candy (bánh kẹo) ",
         "Tiki Outpost",
        }
     end
